@@ -190,7 +190,7 @@ class cactus_mincut : public minimum_cut {
 };
 
 
-void _write_cactus_graphml_file(mutableGraphPtr cactus, const std::string& cactus_filename) {
+inline void _write_cactus_graphml_file(mutableGraphPtr cactus, const std::string& cactus_filename) {
     std::ostringstream oss;
 
     oss << "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
