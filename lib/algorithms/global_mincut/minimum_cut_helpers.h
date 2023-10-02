@@ -104,11 +104,12 @@ class minimum_cut_helpers {
             smaller = 1;
         }
 #ifndef NDEBUG
-        for (NodeID n : G->nodes()) {
-            if (G->getPartitionIndex(n) == smaller) {
-                std::cout << "n " << n << std::endl;
-            }
-        }
+        // Note: Min commented out
+        /* for (NodeID n : G->nodes()) { */
+        /*     if (G->getPartitionIndex(n) == smaller) { */
+        /*         std::cout << "n " << n << std::endl; */
+        /*     } */
+        /* } */
 #endif
 
         LOG << "smaller side has " << std::min(inside, outside) << " nodes.";
