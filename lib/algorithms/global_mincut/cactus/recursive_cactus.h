@@ -63,6 +63,9 @@ class recursive_cactus {
 
     mutableGraphPtr flowMincut(
         const std::vector<GraphPtr>& graphs) {
+        // Note: Min added because of stack uninitialized value errors in cactus mincut
+        this->problem_id = random_functions::next();
+
         std::vector<mutableGraphPtr> flow_graphs;
 
         mutableGraphPtr in_graph;
